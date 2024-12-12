@@ -131,7 +131,6 @@ header nav button:hover{
     filter: grayscale(1);
 }
 .Services-Section{
-    height: 100vh;
     width: 100%;
 }
 .Services-Section .Heading{
@@ -162,7 +161,7 @@ header nav button:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 50px;
     
 }
 .Services-Section .Cards-Container .card{
@@ -215,4 +214,55 @@ header nav button:hover{
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.Banner-Div{
+    width: 100%;
+    height: 350px;
+    background-color: #5555551a;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.Banner-Div .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 50%;
+}
+.Banner-Div .content h4{
+    font-size: 35px;
+}
+.Banner-Div .content p{
+    color: #555;
+    /* font-size: 20px; */
+    line-height: 25px;
+}
+.Banner-Div .content button{
+    width: fit-content;
+    color: white;
+    background-color: #111;
+    padding: 20px 40px;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 7px;
+    font-size: 20px;
+    word-spacing: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    /* box-shadow: 0px 5px 0px #111; */
+    transition: all ease-in-out 0.3s;
+}
+.Banner-Div .content button:hover{
+    background-color: transparent;
+    color: #111;
+    box-shadow: 0px 7px 0px #111;
+}
+.Banner-Div .Img-Div {
+    padding-right: 50px;
+}
+.Banner-Div .Img-Div img{
+    width: 300px;
 }
