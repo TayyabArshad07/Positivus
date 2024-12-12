@@ -12,9 +12,13 @@ html,body{
     height: 100%;
 }
 body{
+    overflow-x: hidden;
     padding: 0px 70px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: ppmori;
+}
+.spacer{
+    width: 100%;
+    height: 100px;
 }
 
 header{
@@ -52,6 +56,12 @@ header nav button{
     font-size: 14px;
     font-weight: 600;
 }
+header nav button:hover{
+    background-color: #bcd85f;
+    border-color: #bcd85f;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
 .First-Section{
     width: 100%;
 }
@@ -86,14 +96,14 @@ header nav button{
     background-color: black;
     border: 1px solid black;
     padding: 15px 30px;
-    word-spacing: 4px;
+    word-spacing: 3px;
     color: white;
     outline: none;
     cursor: pointer;
     border-radius: 7px;
     font-size: 16px;
     font-weight: 600;
-    transition: all ease-in-out 0.3s;
+    /* transition: all ease-in-out 0.3s; */
 }
 .First-Section .content .first button:hover{
     background-color: transparent;
@@ -119,4 +129,90 @@ header nav button{
 }
 .companySlider img{
     filter: grayscale(1);
+}
+.Services-Section{
+    height: 100vh;
+    width: 100%;
+}
+.Services-Section .Heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-bottom: 75px;
+}
+.Services-Section .Heading h4{
+    background-color: #bcd85f;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 15px 5px 0px;
+    border-radius: 2px;
+}
+.Services-Section .Heading p{
+    width: 50%;
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+}
+.Services-Section .Cards-Container{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
+}
+.Services-Section .Cards-Container .card{
+    border: 2px solid black;
+    padding: 30px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 0px black;
+    display: flex;
+    justify-content: space-between;
+}
+.Services-Section .Cards-Container .black-card{
+    background-color: black;
+}
+.Services-Section .Cards-Container .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+}
+.Services-Section .Cards-Container .card .content h4{
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 50px;
+}
+.Services-Section .Cards-Container .card .content h4 span{
+    padding: 6px;
+    border-radius: 7px;
+}
+.Services-Section .Cards-Container .white-card .content h4 span{
+    background-color: #bcd85f;
+}
+.Services-Section .Cards-Container .black-card .content h4 span{
+    background-color: white;
+}
+.Services-Section .Cards-Container .card .content .Icon-Div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content  ;
+}
+.Services-Section .Cards-Container .card .content .Icon-Div h6{
+    font-size: 16px;
+    word-spacing: 3px;
+}
+.Services-Section .Cards-Container .black-card .content .Icon-Div h6{
+    color: white;
+}
+.Img-Div{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
